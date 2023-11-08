@@ -47,7 +47,7 @@ jobs:
         run: make clean
 
   build-x265:
-    runs-on: macos-latest
+    runs-on: macos-arm64
     steps:
       - name: Clone x265
         run: |
