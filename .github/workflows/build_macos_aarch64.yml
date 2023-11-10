@@ -189,6 +189,9 @@ jobs:
           --enable-version3 \
           --enable-avdevice \
           --enable-avcodec \
+          --enable-avfilter \
+          --enable-swscale \
+          --enable-avutil \
           --enable-avformat \
           --enable-swresample \
           --disable-doc \
