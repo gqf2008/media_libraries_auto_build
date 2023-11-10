@@ -149,8 +149,6 @@ jobs:
         working-directory: ./source
         run: |
           Start-Process -Wait -FilePath ".\project_generate.exe" -PassThru -NoNewWindow -ArgumentList `
-          "--disable-all", `
-          "--disable-autodetect", `
           "--enable-dxva2", `
           "--enable-d3d11va", `
           "--enable-cuvid", `
