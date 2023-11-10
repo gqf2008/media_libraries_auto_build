@@ -149,6 +149,8 @@ jobs:
         working-directory: ./source
         run: |
           Start-Process -Wait -FilePath ".\project_generate.exe" -PassThru -NoNewWindow -ArgumentList `
+          "--disable-all", `
+          "--disable-autodetect", `
           "--enable-dxva2", `
           "--enable-d3d11va", `
           "--enable-cuvid", `
@@ -162,6 +164,8 @@ jobs:
           "--enable-avdevice", `
           "--enable-avcodec", `
           "--enable-avformat", `
+          "--enable-avfilter", `
+          "--enable-swscale", `
           "--enable-swresample", `
           "--enable-libx264", `
           "--enable-libx265", `
